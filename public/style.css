@@ -1,0 +1,127 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #84fab0, #8fd3f4);
+}
+
+#login-screen {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#login-screen input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    width: 80%;
+}
+
+#login-screen button {
+    padding: 10px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chat-container {
+    width: 95%;
+    max-width: 800px;
+    display: flex;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+#user-list {
+    width: 25%;
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 10px;
+    box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.1);
+}
+
+#user-list h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+#user-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+#user-list ul li {
+    margin: 5px 0;
+    padding: 5px;
+    background: #34495e;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#chat-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: #ecf0f1;
+}
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+#messages div {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+#messages .self {
+    align-self: flex-end;
+    background: #3498db;
+    color: white;
+}
+
+#messages .other {
+    align-self: flex-start;
+    background: #e74c3c;
+    color: white;
+}
+
+#message-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #bdc3c7;
+}
+
+#message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    outline: none;
+}
+
+#message-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #2ecc71;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
